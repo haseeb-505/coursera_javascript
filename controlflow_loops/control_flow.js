@@ -52,3 +52,10 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+// Step 5: Use ternary operator for isAuthenticated and authenticationStatus
+let isAuthenticated = true
+// authenticationStatus check
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
+// console authenticationStatus
+console.log("Authentication Status:", authenticationStatus);
