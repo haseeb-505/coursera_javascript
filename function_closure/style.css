@@ -2,4 +2,38 @@
     color: white;
     background-color: rgb(63, 32, 241);
     border-radius: 1cm;
+    padding: 10px px; /* Increase padding */
+    font-size: 15px;    /* Increase font size */
+    width: 100px;       /* Set a fixed width */
+    height: 30px;       /* Set a fixed height */
 }
+
+button.danger {
+    background-color: rgb(233, 22, 22);
+    color: white;
+    font-size: medium;
+    border-radius: 1cm;
+    margin-left: 15px;
+    padding: 10px px; /* Increase padding */
+    font-size: 15px;    /* Increase font size */
+    width: 200px;       /* Set a fixed width */
+    height: 30px;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip.show {
+    visibility: visible;
+    opacity: 1;
+}
+

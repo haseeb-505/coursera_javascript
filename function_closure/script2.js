@@ -22,28 +22,26 @@ function displayCount() {
 // Add event listener to the reset button and define the resetFollowers function inline
 // uncomment the next blcok of code if you do not want to add resetFollowers function
 
-document.getElementById("reset").addEventListener('click', function() {
-    let userconfirm = confirm("Are you sure, you want to reset followers?");
-    if (userconfirm) {
-        count = 0; // setting the count equal to zero after confirmation
-        displayCount(); // display the updated count
-        alert("Follower count is reset to zero");
-    };
-});
-
-// now using resetFollowers function
-
-// function resetFollowers() {
+// document.getElementById("reset").addEventListener('click', function() {
 //     let userconfirm = confirm("Are you sure, you want to reset followers?");
 //     if (userconfirm) {
-//         count = 0;
-//         displayCount();
+//         count = 0; // setting the count equal to zero after confirmation
+//         displayCount(); // display the updated count
 //         alert("Follower count is reset to zero");
-//     }
-// }
+//     };
+// });
 
-// // adding the evenlistener to reset button
-// document.getElementById("reset1").addEventListener('click', resetFollowers)
+// now using resetFollowers function
+// event listener is not needed as we are directly passing the function on click
+
+function resetFollowers() {
+    let userconfirm = confirm("Are you sure, you want to reset followers?");
+    if (userconfirm) {
+        count = 0;
+        displayCount();
+        alert("Follower count is reset to zero");
+    }
+}
 
 // to display the message on buttons
 const tooltip = document.getElementById("tooltip");

@@ -7,20 +7,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Interactive Counter</h1>
+    <h1>Interactive Counter 2nd Method</h1>
     <h2>Account Holder Name: Peter Parker</h2>
     <p>Followers: <span id="countDisplay">0</span></p>
     <hr>
     <h2>Click one button to follow</h2>
     <button onclick="increaseCount()" id="follow">Follow</button>
     
-    <button id="reset" class="danger">Reset followers to zero</button> <!--without function on 'on click'-->
-    <div class="tooltip" id="tooltip"></div>
-    
     <!-- with resetFollowers function call on 'on click' event-->
      <!-- uncomment the next line -->
-    <!-- <button onclick="resetFollowers()" id="reset1" class="danger">Reset followers to zero</button> -->
+    <button onclick="resetFollowers()" id="reset" class="danger">Reset followers to zero</button>
+    <div class="tooltip" id="tooltip"></div>
 
-    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
 </body>
 </html>
