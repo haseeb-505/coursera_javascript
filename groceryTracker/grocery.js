@@ -7,7 +7,6 @@ function totalAmount() {
     amount_2 = parseFloat(document.getElementById("Grocery-2").value) || 0;
     amount_3 = parseFloat(document.getElementById("Grocery-3").value) || 0;
     
-    
     let grandSum = amount_1 + amount_2 + amount_3;
     document.getElementById("Total").innerText = `The total amount is:  $ ${grandSum}`;
 }
