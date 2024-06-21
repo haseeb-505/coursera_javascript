@@ -28,10 +28,25 @@ function showbooks() {
     <p><strong>Book Name: </strong>${book.name}</p>
     <p><strong>Author Name: </strong>${book.authorName}</p>
     <p><strong>Book Description: </strong>${book.bookDescription}</p>
-    <p><strong>No. of Pages: </strong>${book.pagesNumber}</p>`
+    <p><strong>No. of Pages: </strong>${book.pagesNumber}</p>
+    <button class="content" onclick="updateBook(${index})">Update Book</button>
+    <button class="danger" onclick="deleteBook(${index})">Delete Book</button>`
     );
     document.getElementById('books').innerHTML = booksDiv.join('');
 }
+
+// to show delete and update options
+function updateBook(index) {
+    // to pre fill all the fields to make changes
+    const book = books_array[index];
+    document.getElementById('bookName').value = book.name;
+    document.getElementById('authorName').value = book.authorName;
+    document.getElementById('bookDescription').value = book.bookDescription;
+    document.getElementById('pagesNumber').value = book.pagesNumber;
+    // Remove the book from the array to simulate updating it
+    books_array.splice(index, 1);
+}
+
 
 // to clear the input form
 function clearInputs() {
@@ -40,6 +55,12 @@ function clearInputs() {
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
 
+}
+
+// to delete the book
+function deleteBook(index) {
+    books_array.splice(index, 1);
+    showbooks();
 }
 
 
