@@ -1,3 +1,35 @@
-.danger{
-    background-color: red;
+/* CSS file */
+
+/* General button styles */
+button {
+    font-family: Arial, sans-serif;
+    background-color: #c8ccce;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Specific styles for content buttons */
+button.content {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button.content:hover {
+    background-color: #45a049;
+}
+
+/* Specific styles for danger buttons */
+button.danger {
+    background-color: #f44336; /* Red */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button.danger:hover {
+    background-color: #d32f2f;
 }
