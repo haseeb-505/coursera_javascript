@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+</head>
+<body>
+   <h1>Employee Management System</h1>
+
+  <div>
+    <button onclick="displayEmployees()">Display Employees</button>
+    <button onclick="calculateTotalSalaries()">Calculate Total Salaries</button>
+    <button onclick="displayHREmployees()">Display HR Employees</button>
+  </div>
+  <div id="userid">
+    <label for="userIdInput">Enter User ID to find the user:</label>
+    <input type="text" id="userIdInput" placeholder="Enter ID here">
+    <button id="findUserButton" onclick="getUserById()">Find User</button>  <div id="dropdownId" class="dropdown-content"></div>
+  </div>
+  <div id="userName">
+    <label for="userName">Enter User Complete Name to find the user:</label>
+    <input type="text" id="getuserName" placeholder="Enter Name here">
+    <button id="findUserButton" onclick="getUserByName()">Find User</button>
+  <div id="dropdownId" class="dropdown-content"></div>
+</div>
+
+ <div id="employeesDetails"></div>
+
+ 
+<script src="./employee_details.js"></script>
+</body>
+</html>
