@@ -1,0 +1,29 @@
+input{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px hard black;
+    border-radius: 5px;
+    margin: 5px;
+}
+button{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.content{
+    background-color: rgb(5, 134, 55);
+    color: white;
+}
+.clearComplete{
+    background-color: rgb(156, 38, 58);
+    color: whitesmoke;
+}
+.danger{
+    background-color: rgb(226, 24, 24);
+    color: white;
+}

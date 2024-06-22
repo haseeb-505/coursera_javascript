@@ -2,6 +2,7 @@ const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
 const clearCompletedBtn = document.getElementById("clearCompletedBtn");
+const clearAllTasksBtn =document.getElementById("clearAllTasks"); 
 
 let tasks = [];
 
@@ -39,7 +40,15 @@ function clearCompletedTasks() {
     displayTasks();
 }
 
+// clear all tasks
+function clearAllTasks() {
+    tasks = [];
+    displayTasks();
+}
+
 // Perform addEventListener for addTask and clearCompletedTasks buttons to listen for clicks after clicking the Add Task and Clear Completed buttons.
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
-displayTasks();
+clearAllTasksBtn.addEventListener("click", clearAllTasks);
+
+// displayTasks();
