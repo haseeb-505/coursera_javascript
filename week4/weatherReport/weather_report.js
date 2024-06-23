@@ -3,7 +3,7 @@ try{
         event.preventDefault();
         // Above code prevents the default behavior of an event, such as form submission, within a function named showweatherDetails.
         const city = document.getElementById('city').value;
-        const apiKey = '00c7bbf375335678412c54c02d79ad43';
+        const apiKey = '**********';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         // fetching the details of the city user entered
