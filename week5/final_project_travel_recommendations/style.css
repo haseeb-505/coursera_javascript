@@ -1,0 +1,465 @@
+.img{
+    margin: 2px 10px 0px 0px;
+    padding: 5px;
+}
+.navbar-brand{
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+}
+.bg-light{
+    background-color: black !important;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 25px;
+}
+
+.form-inline{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+/* .form-inline input{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(107, 196, 218);
+    width: 250px;
+} */
+.btn{
+    background-color: rgb(107, 196, 218);
+    margin: 5px;
+    padding: 1px;
+}
+.btn-outline-success{
+    background-color: rgb(40, 175, 175);
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+.form-inline .form-control{
+    width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+}
+/* medium or small screen */
+.navbar-light .navbar-toggler{
+    size: 100px;
+    border-color: white;
+    font-size: 1.5rem;
+    background-color: rgb(105, 103, 104);
+}
+.navbar-toggler-icon{
+    background-color: white;
+    border: 5px solid white;
+    size: 25px;
+}
+
+/* Ensure anchor tags maintain their color when focused or hovered */
+a.nav-link:hover, .navbar-brand:hover {
+    color: white;
+}
+a.nav-link:focus, a.nav-link:hover,
+.navbar-brand:focus, .navbar-brand:hover {
+    color: white !important;
+}
+
+/* .background-image {
+    background-image: url('./images/Faisal_Masjid_From_Damn_e_koh.jpg'); 
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;   
+    background-size: cover;
+    position: relative;
+} */
+
+.background-image {
+    background-image: url('./images/Faisal_Masjid_From_Damn_e_koh.jpg'); /* Replace with your image path */
+    min-height: 100vh; /* Ensure the background covers at least the full viewport height */
+    background-position: center;
+    background-repeat: repeat;   
+    background-size: cover;
+    position: relative;
+    overflow: scroll; /* Prevent content from overflowing */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content  {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: to add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.message .h1-class{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+}
+.message .message-para{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content > h1 {
+    font-size: 50px;
+}
+.content > p {
+    font-size: 24px;
+}
+
+.btn-outline-content{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(5, 80, 17, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* social media links */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Optional: Align items horizontally in the center */
+    /* margin-top: 20px; Adjust margin as needed */
+}
+
+
+.social-link-facebook {
+    /* margin-bottom: 10px; Adjust margin between links */
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+
+}
+.social-link-x {
+    /* margin-bottom: 10px; Adjust margin between links */
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+.social-link-insta {
+    /* margin-bottom: 10px; Adjust margin between links */
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.social-link-youtube{
+    /* margin-bottom: 10px; Adjust margin between links */
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.circular-image {
+    width: 30px; /* Set your desired width */
+    height: 30px; /* Set your desired height */
+    border-radius: 100%; /* Crop the image circularly */
+    overflow: hidden; /* Hide overflow content outside the circle */
+    display: inline-block; /* Ensure the link behaves as a block */
+}
+
+.circular-image img {
+    width: 100%; /* Make the image fill the circular container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+}
+
+/* about us page */
+.message .h1-about{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    /* font-style: italic; */
+    font-weight:bold;
+}
+
+.message .about-para{
+    position: absolute;
+    top: 30%;
+    left: 93%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    /* font-style: italic; */
+    width: 85%;
+}
+
+/* about us team */
+/* .our-team > h1{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+} */
+.cards{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 69%;
+    left: 93%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    width: 85%;
+}
+.cards > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.cards .card{
+    margin-left: 15px;
+}
+
+.card .circular-image {
+    align-self: center;
+    width: 70px; /* Set your desired width */
+    height: 70px; /* Set your desired height */
+    border-radius: 100%; /* Crop the image circularly */
+    overflow: hidden; /* Hide overflow content outside the circle */
+    display: inline-block; /* Ensure the link behaves as a block */
+}
+
+.card-body .card-title{
+    color: black;
+    font-weight: bold;
+}
+.card-body{
+    padding: 1px !important;
+}
+
+.card-body .card-text{
+    color: black;
+}
+
+.btn-primary{
+    size: 30px;
+    margin-bottom: 2px !important;
+    background-color: rgb(6, 90, 62);
+    border: none !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.designation{
+    border-radius: 10px;
+    background: rgba(15, 80, 19, 0.7);
+    color: white;
+    cursor: default !important;
+}
+
+/* contact us */
+.contact-us .h1-class h1 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bold;
+    
+    /* background: rgba(0, 0, 0, 0.7); */
+    color: white;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.contact-us .contact-para{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* background: rgba(0, 0, 0, 0.7); */
+    color: white;
+    /* padding: 10px; */
+    width: 20%;
+    /* height: 20%; */
+    text-align: center;
+}
+
+.contact-form{
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contact-form .form-group {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: larger;
+    /* padding: 2px; */
+}
+
+.contact-form .form-group .form-text {
+    color: rgb(173, 10, 10);
+    background: rgb(0, 0, 0);
+    /* font-size: larger; */
+}
+.form-check-input{
+    width: 25px;
+    height: 25px;
+}
+
+.form-check-label {
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.contact-form .btn-primary{
+    width: 90%;
+    /* display: grid; */
+    position: absolute;
+    left: 5%;
+}
+
+.form-group textarea{
+    border-radius: 5px;
+    color: black;
+    overflow: scroll;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* search results */
+/* search results */
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Start from left */
+    width: 100%; /* Adjust width to fit the content */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+#results{
+    position: absolute;
+    left: 70%;
+    width: 350px;
+}
+
+.card-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 350px; /* Adjust width for individual result cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2px; /* Add padding to the result card */
+}
+
+.card-flex img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-flex h3 {
+    margin: 5px 0;
+    color: #000000; /* Change text color */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24px; /* Reduce font size for the heading */
+    text-align: center;
+    background: #f0f0f0; /* Change background color */
+    border-bottom: 1px solid #ccc; /* Add border at the bottom of heading */
+    padding: 5px; /* Add padding to the heading */
+}
+
+.card-flex p {
+    margin: 5px;
+    color: #1d1c1c; /* Change text color */
+    background: #f0f0f0;
+    font-size: 14px; /* Reduce font size for the description */
+    line-height: 1.4; /* Increase line height for better readability */
+}

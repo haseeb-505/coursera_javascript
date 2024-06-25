@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="img">
+        <img src="./images/travel_logo.jpeg" alt="travel_logo" width="50px" height="50px" srcset="">
+      </span>
+        <a class="navbar-brand" href="./travelRecommendation.html">TravelBloom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about_us.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Enter a destination or key word here!" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="clear-button" type="submit">Clear</button>
+          </form>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="background-image">
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="#" class="social-link-facebook circular-image"><img src="./images/facebook.png" alt="Facebook" widht="20px" height="20px"></a>
+            <a href="#" class="social-link-x circular-image"><img src="./images/x.png" alt="Twitter" widht="20px" height="20px"></a>
+            <a href="#" class="social-link-insta circular-image"><img src="./images/instagram.jpeg" alt="Instagram" widht="20px" height="20px"></a>
+            <a href="#" class="social-link-youtube circular-image"><img src="./images/youtube.png" alt="YouTube" width="20px" height="20px"></a>
+        </div>
+        <div class="message">
+            <div class="h1-class">
+                <h1>Explore Your Dream Destinations here!</h1>
+            </div>
+            <div class="message-para">
+                <p>Discover your next adventure with us! TravelBloom believes travel is more than exploration; it's about cultural immersion, nature's beauty, and cherished memories. They inspire unique journeys, whether seeking relaxation, adventure, or historical intrigue. With exceptional service, they are your partner in discovering endless wonders and making each trip extraordinary.
+                </p>
+            </div>
+            <div class="book-butoon btn-outline">
+                <button class="btn-outline-content" type="submit">Book Now</button>
+            </div>
+            
+            <!-- results -->
+            <div id="results"></div>    
+        </div>
+    </div>
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Popper.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- javascript file -->
+      <script src="./travelRecommendation.js"></script>
+</body>
+</html>

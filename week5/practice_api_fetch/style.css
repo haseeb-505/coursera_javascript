@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1em;
+}
+
+nav a, nav input, nav button {
+    color: white;
+    background-color: #444;
+    border: none;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+#results {
+    padding: 1em;
+}
