@@ -84,10 +84,12 @@ function displayResults(results) {
     resultsContainer.innerHTML = '';
     results.forEach(result => {
         const resultElement = document.createElement('div');
+        resultElement.classList.add('card-flex')
         resultElement.innerHTML = `
+            <img src="${result.imageUrl}" alt="${result.name}" width="300" height="300">
             <h3>${result.name}</h3>
             <p>${result.description}</p>
-            <img src="${result.imageUrl}" alt="${result.name}" width="200">
+            <a class="travel-visit" href='#'>visit</a>
         `;
         resultsContainer.appendChild(resultElement);
     });

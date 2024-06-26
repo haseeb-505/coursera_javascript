@@ -45,11 +45,12 @@
               <a class="nav-link" href="./sign_in_form.html" id="sign-in-link">Sign In</a>
           </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <!-- removing the search option when user is creating account or logging in -->
+          <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Enter a destination or key word here!" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Search</button>
             <button class="btn btn-outline-success my-2 my-sm-0" id="clear-button" type="submit">Clear</button>
-          </form>
+          </form> -->
         </div>
     </nav>
     <!-- Content -->
@@ -61,22 +62,24 @@
             <a href="#" class="social-link-insta circular-image"><img src="./images/instagram.jpeg" alt="Instagram" widht="20px" height="20px"></a>
             <a href="#" class="social-link-youtube circular-image"><img src="./images/youtube.png" alt="YouTube" width="20px" height="20px"></a>
         </div>
-        <div class="message">
-            <div class="h1-class">
-                <h1>Explore Your Dream Destinations here!</h1>
+        <div class="auth-form" id="signin-form">
+            <h2 class="text-center"">Sign In</h2>
+            <form id="sign-in-form">
+                <div class="form-group">
+                    <label for="signin-username" class="sign-in-label">Username</label>
+                    <input type="text" class="form-control" id="signin-username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password" class="sign-in-label">Password</label>
+                    <input type="password" class="form-control" id="signin-password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </form>
+            <div class="auth-toggle">
+                <p>Don't have an account? <a href="./sign_up.html" id="show-signup">Sign Up</a></p>
             </div>
-            <div class="message-para">
-                <p>Discover your next adventure with us! TravelBloom believes travel is more than exploration; it's about cultural immersion, nature's beauty, and cherished memories. They inspire unique journeys, whether seeking relaxation, adventure, or historical intrigue. With exceptional service, they are your partner in discovering endless wonders and making each trip extraordinary.
-                </p>
-            </div>
-            <div class="book-butoon btn-outline">
-                <button class="btn-outline-content" type="submit" href="#">Book Now</button>
-            </div>
-            
-            <!-- results -->
-            <div id="results"></div>    
         </div>
-    </div>
+    </di>
 
       <!-- jQuery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

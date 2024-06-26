@@ -90,7 +90,7 @@ a.nav-link:focus, a.nav-link:hover,
     background-repeat: repeat;   
     background-size: cover;
     position: relative;
-    overflow: scroll; /* Prevent content from overflowing */
+    overflow: auto; /* Prevent content from overflowing */
 }
 
 body, html {
@@ -463,3 +463,39 @@ body, html {
     font-size: 14px; /* Reduce font size for the description */
     line-height: 1.4; /* Increase line height for better readability */
 }
+
+.card-flex .travel-visit{
+    background: rgb(6 131 25);
+    color: white;
+    width: 20%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* sig in form */
+
+.auth-form {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 30%;
+    margin: 10px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.sign-in-form .form-group {
+    position: absolute;
+    /* top: 20%; */
+    left: 35%;
+    right: 35%;
+    color: #000000;
+}
+
