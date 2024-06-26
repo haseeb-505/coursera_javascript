@@ -158,3 +158,10 @@ function displayResults(results) {
         resultsContainer.appendChild(resultElement);
     });
 }
+
+// show time New York time zone 
+const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+console.log("Current time in New York:", newYorkTime);
+document.getElementById('time-newyork').innerHTML = `<h4>New York, America Time Live</h4>
+                                                        <span>${newYorkTime}</span>`

@@ -113,7 +113,7 @@ body, html {
 
 .message .h1-class{
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 55%;
     transform: translate(-95%, -50%);
     text-align: center;
@@ -127,14 +127,15 @@ body, html {
 }
 .message .message-para{
     position: absolute;
-    top: 55%;
-    left: 55%;
+    top: 57%;
+    left: 64%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.7); /* Optional: to add a semi-transparent background */
     padding: 20px;
     border-radius: 10px;
+    width: 50%;
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -148,8 +149,8 @@ body, html {
 
 .btn-outline-content{
     position: absolute;
-    top: 85%;
-    left: 20%;
+    top: 80%;
+    left: 12.5%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
@@ -173,7 +174,7 @@ body, html {
     /* margin-bottom: 10px; Adjust margin between links */
     position: absolute;
     top: 25%;
-    left: 5%;
+    left: 3%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
@@ -184,7 +185,7 @@ body, html {
     /* margin-bottom: 10px; Adjust margin between links */
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 3%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
@@ -194,7 +195,7 @@ body, html {
     /* margin-bottom: 10px; Adjust margin between links */
     position: absolute;
     top: 55%;
-    left: 5%;
+    left: 3%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
@@ -205,7 +206,7 @@ body, html {
     /* margin-bottom: 10px; Adjust margin between links */
     position: absolute;
     top: 70%;
-    left: 5%;
+    left: 3%;
     transform: translate(-95%, -50%);
     text-align: center;
     color: white;
@@ -499,3 +500,13 @@ body, html {
     color: #000000;
 }
 
+#time-newyork{
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#time-newyork h4{
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
