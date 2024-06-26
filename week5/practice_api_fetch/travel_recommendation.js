@@ -36,9 +36,9 @@
 
 
 const recommendation_api = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-JS0101EN-SkillsNetwork/travel1.json';
- const recommendation_file_url = './travel_recommendation_api.json';
+const recommendation_file_url = './travel_recommendation_api.json';
 
-document.getElementById('search-button').addEventListener('click', function(event) {
+ document.getElementById('search-button').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent form submission
     const query = document.getElementById('search-input').value.toLowerCase();
     searchRecommendations(query);
@@ -50,34 +50,46 @@ document.getElementById('clear-button').addEventListener('click', function(event
     document.getElementById('results').innerHTML = '';
 });
 
-
 function searchRecommendations(query) {
     fetch(recommendation_file_url)
         .then(response => response.json())
         .then(data => {
-            console.log("we are in data field");
-            console.log(data);
-            // Define an array to store subelements
-            const recommendations = [];
-            
-            // Loop through data and store subelements in recommendations
-            for (element in data) {
-                data[element].forEach(subelement => {
-                    recommendations.push(subelement);
-                });
-            }
-            console.log("Data with recommendations is:", recommendations);
-            console.log(`Quer is ${query}`);
-            const results = recommendations.filter(item =>
-                console.log(`item type ${item.type} and name ${item.name}`)
-                (item.type && item.type.toLowerCase().includes(query || '')) ||
-                (item.name && item.name.toLowerCase().includes(query || ''))
-            );
-            console.log(results);
+            const results = filterResults(data, query);
             displayResults(results);
         })
         .catch(error => console.error('Error fetching the recommendation data', error));
 }
+
+function filterResults(data, query) {
+    const recommendations = [];
+
+    // Helper function to recursively search through all properties
+    function searchAllProperties(item) {
+        for (const key in item) {
+            if (typeof item[key] === 'object') {
+                searchAllProperties(item[key]);
+            } else if (item[key] && typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
+                if (item.description !== undefined && item.imageUrl !== undefined) {
+                    recommendations.push(item); // Only add if description and imageUrl are defined
+                    // do  not break the loop untill you find all the matching results pissible
+                }
+            }
+        }
+    }
+
+    // Search through each category in the data
+    for (const category in data) {
+        if (Array.isArray(data[category])) {
+            data[category].forEach(item => {
+                searchAllProperties(item);
+            });
+        }
+    }
+
+    return recommendations;
+}
+
+
 
 function displayResults(results) {
     const resultsContainer = document.getElementById('results');
@@ -89,7 +101,6 @@ function displayResults(results) {
             <img src="${result.imageUrl}" alt="${result.name}" width="300" height="300">
             <h3>${result.name}</h3>
             <p>${result.description}</p>
-            <a class="travel-visit" href='#'>visit</a>
         `;
         resultsContainer.appendChild(resultElement);
     });
