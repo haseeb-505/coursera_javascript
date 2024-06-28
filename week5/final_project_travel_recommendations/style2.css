@@ -1,0 +1,561 @@
+.img{
+    margin: 2px 10px 0px 0px;
+    padding: 5px;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+}
+.bg-light{
+    background-color: black !important;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 25px;
+}
+
+.form-inline{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.btn{
+    background-color: rgb(107, 196, 218);
+    margin: 5px;
+    padding: 1px;
+}
+.btn-outline-success{
+    background-color: rgb(40, 175, 175);
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+.form-inline .form-control{
+    width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+}
+.navbar-light .navbar-toggler{
+    border-color: white;
+    font-size: 1.5rem;
+    background-color: rgb(105, 103, 104);
+}
+.navbar-toggler-icon{
+    background-color: white;
+    border: 5px solid white;
+}
+
+a.nav-link:hover, .navbar-brand:hover {
+    color: white;
+}
+a.nav-link:focus, a.nav-link:hover,
+.navbar-brand:focus, .navbar-brand:hover {
+    color: white !important;
+}
+
+.background-image {
+    background-image: url('./images/Faisal_Masjid_From_Damn_e_koh.jpg'); 
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: repeat;   
+    background-size: cover;
+    position: relative;
+    overflow: auto;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content  {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.message .h1-class{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+}
+.message .message-para{
+    position: absolute;
+    top: 57%;
+    left: 64%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content > h1 {
+    font-size: 50px;
+}
+.content > p {
+    font-size: 24px;
+}
+
+.btn-outline-content{
+    position: absolute;
+    top: 80%;
+    left: 12.5%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(5, 80, 17, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* social media links */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.social-link-facebook {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+
+}
+.social-link-x {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+.social-link-insta {
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.social-link-youtube{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.circular-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.circular-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* about us page */
+.message .h1-about{
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight:bold;
+}
+
+.message .about-para{
+    position: absolute;
+    top: 30%;
+    left: 93%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 85%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 69%;
+    left: 93%;
+    transform: translate(-95%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    width: 85%;
+}
+.cards > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.cards .card{
+    margin-left: 15px;
+}
+
+.card .circular-image {
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.card-body .card-title{
+    color: black;
+    font-weight: bold;
+}
+.card-body{
+    padding: 1px !important;
+}
+
+.card-body .card-text{
+    color: black;
+}
+
+.btn-primary{
+    size: 30px;
+    margin-bottom: 2px !important;
+    background-color: rgb(6, 90, 62);
+    border: none !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.designation{
+    border-radius: 10px;
+    background: rgba(15, 80, 19, 0.7);
+    color: white;
+    cursor: default !important;
+}
+
+/* contact us */
+.contact-us .h1-class h1 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.contact-us .contact-para{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 20%;
+    text-align: center;
+}
+
+.contact-form{
+    width: 40%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contact-form .form-group {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: larger;
+}
+
+.contact-form .form-group .form-text {
+    color: rgb(255, 255, 255);
+}
+
+.contact-form .form-group input[type=text],
+.contact-form .form-group input[type=email],
+.contact-form .form-group textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.contact-form .form-group textarea {
+    resize: none;
+}
+
+.contact-form .btn-primary {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: rgb(6, 90, 62);
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* 
+/* Media Queries for Responsive Design */
+/*
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: large;
+    }
+    .form-inline .form-control {
+        width: 200px;
+    }
+    .content {
+        left: 50%;
+        padding: 10px;
+    }
+    .content > h1 {
+        font-size: 30px;
+    }
+    .content > p {
+        font-size: 18px;
+    }
+    .message .h1-class,
+    .message .message-para,
+    .btn-outline-content,
+    .social-link-facebook,
+    .social-link-x,
+    .social-link-insta,
+    .social-link-youtube {
+        left: 5%;
+        width: 90%;
+        padding: 10px;
+    }
+    .message .about-para,
+    .cards,
+    .cards .card {
+        left: 5%;
+        width: 90%;
+    }
+    .contact-form {
+        width: 80%;
+        left: 10%;
+    }
+    .contact-us .h1-class h1,
+    .contact-us .contact-para {
+        left: 5%;
+        width: 90%;
+    }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: x-large;
+    }
+    .form-inline .form-control {
+        width: 250px;
+    }
+    .content {
+        left: 50%;
+        padding: 15px;
+    }
+    .content > h1 {
+        font-size: 40px;
+    }
+    .content > p {
+        font-size: 22px;
+    }
+    .message .h1-class,
+    .message .message-para,
+    .btn-outline-content,
+    .social-link-facebook,
+    .social-link-x,
+    .social-link-insta,
+    .social-link-youtube {
+        left: 5%;
+        width: 90%;
+        padding: 10px;
+    }
+    .message .about-para,
+    .cards,
+    .cards .card {
+        left: 5%;
+        width: 90%;
+    }
+    .contact-form {
+        width: 70%;
+        left: 15%;
+    }
+    .contact-us .h1-class h1,
+    .contact-us .contact-para {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: xx-large;
+    }
+    .form-inline .form-control {
+        width: 300px;
+    }
+    .content {
+        left: 50%;
+        padding: 20px;
+    }
+    .content > h1 {
+        font-size: 50px;
+    }
+    .content > p {
+        font-size: 24px;
+    }
+    .message .h1-class,
+    .message .message-para,
+    .btn-outline-content,
+    .social-link-facebook,
+    .social-link-x,
+    .social-link-insta,
+    .social-link-youtube {
+        left: 7.5%;
+        width: 85%;
+        padding: 15px;
+    }
+    .message .about-para,
+    .cards,
+    .cards .card {
+        left: 7.5%;
+        width: 85%;
+    }
+    .contact-form {
+        width: 60%;
+        left: 20%;
+    }
+    .contact-us .h1-class h1,
+    .contact-us .contact-para {
+        left: 12.5%;
+        width: 75%;
+    }
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+/*
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: xx-large;
+    }
+    .form-inline .form-control {
+        width: 300px;
+    }
+    .content {
+        left: 50%;
+        padding: 20px;
+    }
+    .content > h1 {
+        font-size: 50px;
+    }
+    .content > p {
+        font-size: 24px;
+    }
+    /* .message .h1-class,
+    .message .message-para,
+    .btn-outline-content,
+    .social-link-facebook,
+    .social-link-x,
+    .social-link-insta,
+    .social-link-youtube {
+        left: 10%;
+        width: 80%;
+        padding: 20px;
+    } */
+    /*.message .about-para,
+     .cards,
+    .cards .card {
+        left: 10%;
+        width: 80%;
+    } */
+    /* .contact-form {
+        width: 50%;
+        left: 25%;
+    } */
+    /* .contact-us .h1-class h1,
+    .contact-us .contact-para {
+        left: 15%;
+        width: 70%;
+    } 
+}*/ 
